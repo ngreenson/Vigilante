@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #showbutton{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    #intro{
+        width: 769px;
+        text-align: justify;
+        margin: auto;
+    }
+    .resumeSection {
+        width: 769px;
+        text-align:justify;
+        margin:auto;
+    }
+    #resumeTitle{
+        color: white;
+        transition: color 2s linear;
+    }
+    .sectionTitles{
+        color: white;
+        transition: color 2s linear;
+    }
+    .lists{
+        color: white;
+        transition: color 2s linear;
+    }
+    .intros{
+        color: white;
+        transition: color 2s linear;
+    }
+    .bold-text{
+        font-weight: bold;
+    }
+
+</style>
+<body>
+<div id="intro">
+<h1>Intro To Resume</h1>
+<p>In these dark days of dreadful virus avoidance, some of our best (and worst)
+human features show. In the adoption of new tolerance methods, such as Zoom calls
+and Nintendo Switch, we have made some good use of the time in the last
+two years--while full of both fear and hope of getting out of this murk that is the virus.
+</p>
+<p>
+We need more. We need a new phase in industry and society. Our businesses that went
+bust need to be reopened - perhaps renamed and redesigned. But things will
+gradually get back to normal, differently probably than you imagined it might. 
+This is not the worst Pandemic ever. That was the Plague that killed not 3 million,
+but more like 30 million in Europe.
+</p>
+<p>
+When we get to the safe part, the author and this Resume will become final. Will you come back to read it?
+</p>
+<p>
+If not, here is a short sum-up of my features. Mind you, my real name is concealed 
+because of spam and overload of "new friends" on social media. My moniker is "Norman 
+Greenson," I am Asian, but I like many things Westernized and in English.
+</p>
+<p>
+<button id="showButton" type="button">Get Prepared - Show Resume</button>
+</p>
+</div>    
+
+<div class="resumeSection">
+<h2 id="resumeTitle">Norman Greenson's Resume</h2>
+<h3 class="sectionTitles" class="bold-text">Languages</h3>
+<ol class="lists">
+    <li>English (US)</li>
+    <li>Mandarin non-written (East China)</li>
+    <li>A teeny bit of Cantonese meant for survival in this metropolitan jungle</li>
+</ol>
+<p class="intros">
+Why it is that I am not great at either Mandarin or Cantonese, even being a Hong Kong resident? 
+I actually "skipped" delving into Chinese when I was 7 years old, which means I never got the 
+initiation of Chinese. I resumed actual Chinese studying when I was 14. But my English
+was primed to be my top language - I was top English student into grade 9, after which I competed
+among brainy competition in a Hong Kong school. 
+</p>
+<h3 class="sectionTitles">
+Basic abilities
+</h3>
+<ol class="lists">
+    <li>12-grade or Form 7 math, Pure 2 Calculus (UK)</li>
+    <li>Web development to a basic level, trained on Codecademy.com</li>
+    <li>Javascript deeply trained on udemy.com</li>
+    <li>Philosopy, history, art history, biology learned during a short stint of college in US</li>
+    <li>iPad Pro artwork, traditional fundamental art-paintings and pencil work</li>
+    <li>Stories for Movies</li>
+    <li>Freshly made keyboard recordings (on Garageband, so far)</li>
+    <li>Love to exercise</li>
+</ol>
+<p class="intros">
+My third goal in life is to do cool things and be recognized in some way. But my first and second goals 
+in life are secrets - you may only find out if you know me well.
+</p>
+<h3 class="sectionTitles">
+Professional skills
+</h3>
+<ol class="lists">
+    <li>Movie script writing ability</li>
+    <li>High fantasy imagination and artwork</li>
+    <li>Algorithms in Java, Javascript and HTML, PHP, and soon, Python AI</li>
+    <li>Adherence to technology and plain being nerdy!</li>
+    <li>Need to advance these areas because of a need to work and do productive things</li>
+</ol>
+<p class="intros">
+As you can see, movie script writing is the first line in the list. Why is that so? Because 
+my first movie is coming out in 2022! I will command some parts of its production. Millions of 
+USD for its budget--but will it really return 100%? 200% or even more?
+I also have adherence to technology also because of my lifelong passion in dealing with complex 
+computers. I just want people to respect me for something other than movies, 
+which is one thing, but if I create cool web sites I could be considered job-ready.
+</p>
+<p class="sectionTitles">Movies = fame </p>
+<p class="sectionTitles">Website = professionalism</p>
+<p class="sectionTitles">Art = pride</p>
+<p>
+    <input type="button" value="Return to Home Page" id="home" onclick="clicky()">
+</p>
+</div>
+<script>
+var RS = this.document.querySelector("resumeSection");
+var RStitle= this.document.getElementById("resumeTitle");
+var RSsectiontitles = this.document.getElementsByClassName("sectionTitles");
+var RSintros = this.document.getElementsByClassName("intros");
+var RSlists = this.document.getElementsByClassName("lists");
+var btn =this.document.getElementById("showButton");
+btn.addEventListener("click", function () {
+    RStitle.style.color = "olivedrab";
+    for (i=0;i<RSsectiontitles.length;i++){
+        RSsectiontitles[i].style.color = "steelblue";
+    }
+    for (i=0;i<RSlists.length;i++){
+        RSlists[i].style.color = "black";
+    }
+    for (i=0;i<RSintros.length;i++){    
+        RSintros[i].style.color = "darkblue";
+    }
+});
+function clicky(){
+        window.location = "index.html";}
+</script>
+</body>
+</html>
+
