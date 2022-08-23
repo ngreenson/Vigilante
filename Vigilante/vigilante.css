@@ -16,12 +16,10 @@
 .imgs{
     min-height: 300px;
 }
-#exaction{
+body#exaction{
     background-color:darkslateblue;
     color:white;
     font-size:24px;
-    max-width: 769px;
-    margin: auto;
 }
 body#button{
     border-radius: 10px;
@@ -29,6 +27,7 @@ body#button{
     height: 20px;
 }
 #batcontainer{
+    width: 769px;
     margin:auto;
     display: flex;
     flex: row wrap;
@@ -42,17 +41,18 @@ body#button{
     background-color:darkblue;
 }
 #batcontain{
-
+    width: 769px;
     margin:auto;
     display: flex;
     flex: row wrap;
     justify-content: center;
 }
 #batimg2{
-    width:400px;
+    width:50%;
 }
 
 #growbar{
+    width: 769px;
     margin: auto;
     overflow: hidden;
     max-height: 0px;
@@ -321,19 +321,7 @@ body#trade {
 }
 
 @media only screen and (max-width: 768px){
-.leftcircle{
-    left:0;
-}
-.rightcircle{
-    right:0;
-}
-.midtext{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 30px;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    top: 8rem;
-}
+    #growbar{
+        width: 100%;
+    }
 }

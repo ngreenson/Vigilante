@@ -11,10 +11,6 @@ html {
     color: rgba(200,200,200,1)
   }
   
-  .italic{
-    font-style:italic;
-  }
-
  .backimg {
     width: auto;
     height: 500px;

@@ -11,7 +11,7 @@
         const description = JSON.parse(this.responseText);
           console.log(description);
           for (count=1; count < 3; count++) {
-              document.getElementById(`t +count).textContent = `${description[count-1].desc}`;
+              document.getElementById("t"+count).textContent = `${description[count-1].desc}`;
           }
         }
       };

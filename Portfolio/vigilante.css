@@ -337,3 +337,21 @@ body#trade {
     top: 8rem;
 }
 }
+
+@media only screen and (min-width: 1600px){
+    .leftcircle{
+        left:80px;
+    }
+    .rightcircle{
+        right:80px;
+    }
+    .midtext{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        left: 40%;
+        right: 45%;
+        width: 20%;
+        top: 8rem;
+    }
+}
