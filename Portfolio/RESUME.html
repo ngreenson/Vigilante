@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #showbutton{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    #intro{
+        width: 769px;
+        text-align: justify;
+        margin: auto;
+    }
+    .resumeSection {
+        width: 769px;
+        text-align:justify;
+        margin:auto;
+    }
+    #resumeTitle{
+        color: white;
+        transition: color 2s linear;
+    }
+    .sectionTitles{
+        color: white;
+        transition: color 2s linear;
+    }
+    .lists{
+        color: white;
+        transition: color 2s linear;
+    }
+    .intros{
+        color: white;
+        transition: color 2s linear;
+    }
+    .bold-text{
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 768px){
+        #intro{
+            width: auto;
+        }
+        .resumeSection{
+            width: auto;
+        }
+    }
+
+</style>
+<body>
+<div id="intro">
+<h1>Intro To Resume</h1>
+<p>
+Our world went nasty on us. 
+<br>
+But even in this ill climate, we still need more. We are re-designing the way businesses and schools
+work by communicating online. Perhaps it is a new phase in industry and society. Our businesses that
+went bust need to be reopened - perhaps renamed and redesigned. But things will
+gradually get back to normal, probably differently than you imagined. We'll use cutting edge 
+technology more and more, such as robots, AR, and deep learning. So this is the starting point at 
+which I will be going, and I will rise high!
+</p>
+<p>
+Here is a short sum-up of my work-intended features. Mind you, my real name is
+concealed because of spam and overload of "new friends" on social media. My moniker is "Norman 
+Greenson," I am Asian, but things Westernized and in English are good.
+</p>
+<p>
+<button id="showButton" type="button">Get Prepared - It's a Long Resume</button>
+</p>
+</div>    
+
+<div class="resumeSection">
+<h2 id="resumeTitle">Norman Greenson's Resume</h2>
+<h3 class="sectionTitles" class="bold-text">Languages understood</h3>
+<ol class="lists">
+    <li>English (US)</li>
+    <li>Mandarin non-written (East China)</li>
+    <li>A teeny bit of Cantonese meant for survival in this metropolitan jungle</li>
+</ol>
+<p class="intros">
+Why it is that I am not great at either Mandarin or Cantonese, even being a Hong Kong resident? 
+I actually "skipped" delving into Chinese when I was 7 years old in the US, which means I never 
+got the initiation of Chinese. I resumed Chinese studying when I was 14. But my English
+was primed to be my top language - I was top English student into grade 9, after which I competed
+among more brainy competition in a Hong Kong school. 
+</p>
+<h3 class="sectionTitles">
+Basic abilities - who am I?
+</h3>
+<ol class="lists">
+    <li>"Some College"</li>
+    <li>12-grade or Form 7 math, Pure 2 Calculus (UK)</li>
+    <li>Web design to be ingrained with basic code, trained on Codecademy.com</li>
+    <li>Javascript deeply trained on udemy.com</li>
+    <li>Ongoing training in MERN E-Commerce Node.js Full-stack</li>
+    <li>Breadth subjects: Philosopy, history, biology during a big effort 
+        at college in US, and later art history looking at book and real art, plus other side subjects</li>
+    <li>Art on iPad Pro - Procreate creative work</li>
+    <li>Interest in guitar and piano</li>
+</ol>
+<h3 class="sectionTitles">
+Marketable skills
+</h3>
+<ul class="lists">
+    <li>Already skilled in or have had exposure to these subjects:</li>
+    <li>ARTWORK for visualising scenes: Using Illustrator, Photoshop, Clip Studio, iPad Apple Pencil Procreate</li>
+    <li>FRONT-END: Algorithms in Java, Javascript and HTML, CSS3, Emmet VS Code, MERN: MongoDB Express React Node.js, 
+        React Native training, Gulp, Github DT, Docker, Typescript, Sass, Popper, NPM, Webpack, 
+        Babel, API's, E-commerce training, Design Patterns, Testing and Debugging, DevOps, 
+        advertising, google rankings, 
+        Figma, Firebase, Next.js, Gsap
+        <br>
+        BACK-END: Php and MySQL (to a basic level)
+        <br>
+        APPS: Will have reasonable knowledge of Java latest, and Swift and iOS programming
+
+    </li>
+    <li><a href="ngreenson.github.io/Portfolio">Old portfolio project: Vigilante Justice</a></li>
+    <li><a href="conquestfree.github.io/final-project-Colmar-Academy">Final project from Codecademy</a></li>
+</ol>
+<p class="intros">
+Although I should consider art my best ability,
+I have adherence to technology also because of my lifelong passion in dealing with bits and bytes.
+I am in a quest to earn real respect. Creative writing? N/P. Visualization? OK. But all of Javascript? Part of the quest but is a lot.
+Who knows all the frameworks and add-ons, anyway? Should I be a front-end? To master something in 
+tech... Of course it's worth a go.
+</p>
+<p class="sectionTitles">Writings = fame </p>
+<p class="sectionTitles">Website = professionalism</p>
+<p class="sectionTitles">Art = happiness</p>
+<p>
+    <input type="button" value="Return to Home Page" id="home" onclick="clicky()">
+</p>
+</div>
+<script>
+var RS = this.document.querySelector("resumeSection");
+var RStitle= this.document.getElementById("resumeTitle");
+var RSsectiontitles = this.document.getElementsByClassName("sectionTitles");
+var RSintros = this.document.getElementsByClassName("intros");
+var RSlists = this.document.getElementsByClassName("lists");
+var btn =this.document.getElementById("showButton");
+btn.addEventListener("click", function () {
+    RStitle.style.color = "olivedrab";
+    for (i=0;i<RSsectiontitles.length;i++){
+        RSsectiontitles[i].style.color = "steelblue";
+    }
+    for (i=0;i<RSlists.length;i++){
+        RSlists[i].style.color = "black";
+    }
+    for (i=0;i<RSintros.length;i++){    
+        RSintros[i].style.color = "darkblue";
+    }
+});
+function clicky(){
+        window.location = "index.html";}
+</script>
+</body>
+</html>
+

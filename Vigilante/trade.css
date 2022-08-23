@@ -1,0 +1,40 @@
+html {
+    background-color:mistyrose;
+    backface-visibility: hidden;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 20px;
+    color: rgba(200,200,200,1)
+  }
+  
+ .backimg {
+    width: auto;
+    height: 500px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .backimg:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background: rgba(200,200,200,0.5);
+    transition: opacity 1s ease;
+  }
+
+  .imgs{
+      text-align: center;
+  }
+  
+ .backimg.loaded:after {
+    opacity: 0;
+  }
