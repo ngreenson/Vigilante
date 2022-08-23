@@ -10,13 +10,14 @@
   
         const description = JSON.parse(this.responseText);
           console.log(description);
-          for (count=1; count < 6; count++) {
-              document.getElementById("t"+count).textContent = `${description[count-1].desc}`;
+          for (count=1; count < 3; count++) {
+              document.getElementById(`t +count).textContent = `${description[count-1].desc}`;
           }
         }
-      }
+      };
       xhr.send();
     }
+  
   
 
   
